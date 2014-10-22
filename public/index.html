@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Sprzątanie</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Sprzątanie</h1>
+<div class="well">
+    <h4>Dodaj wpis:</h4>
+    <form>
+        <label for="author">Autor</label><input type="text" id="author" name="author"><br/>
+        <label for="takeout">Wyjęcie naczyń</label><input type="checkbox" id="takeout" name="takeout"><br/>
+        <label for="hoover">Odkurzanie</label><input type="checkbox" id="hoover" name="hoover"><br/>
+        <label for="dish">Zmywanie</label><input type="checkbox" id="dish" name="dish"><br/>
+        <label for="wipe">Wytarcie kurzy</label><input type="checkbox" id="wipe" name="wipe"><br/>
+        <label for="trash">Śmieci</label><input type="checkbox" id="trash" name="trash"><br/>
+        <button type="button" class="btn btn-primary btn-large" onclick="submitData()">Dodaj wpis</button>
+    </form>
+</div>
+<table class="table table-striped">
+<thead>
+<tr>
+    <td>Data</td>
+    <td>Autor</td>
+    <td>Wyjęcie naczyń</td>
+    <td>Odkurzanie</td>
+    <td>Zmywanie</td>
+    <td>Wytarcie kurzy</td>
+    <td>Śmieci</td>
+</tr>
+</thead>
+<tbody id="data"></tbody>
+</table>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
+</html>
